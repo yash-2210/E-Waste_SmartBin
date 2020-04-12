@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.ProfileEditActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkBlue">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/margin100"
+            android:layout_height="@dimen/margin100"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/ic_profile_primary" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/assColor"
+            android:layout_below="@+id/ivProfile"
+            app:cardCornerRadius="@dimen/margin10"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin10">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin10"
+                    android:background="@drawable/field_shape"
+                    android:fontFamily="@font/title_font"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/cardview_dark_background"
+                    android:hint="User Name"
+                    android:padding="@dimen/margin10" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin10"
+                    android:hint="Enter Email"
+                    android:background="@drawable/field_shape"
+                    android:fontFamily="@font/title_font"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/cardview_dark_background"
+                    android:padding="@dimen/margin10" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin10"
+                    android:hint="Enter Mobile Number"
+                    android:background="@drawable/field_shape"
+                    android:inputType="number"
+                    android:textColorHint="@color/cardview_dark_background"
+                    android:fontFamily="@font/title_font"
+                    android:textSize="20sp"
+                    android:padding="@dimen/margin10" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/cardview_dark_background"
+                    android:layout_margin="@dimen/margin10"
+                    android:hint="Enter Old Password"
+                    android:background="@drawable/field_shape"
+                    android:fontFamily="@font/title_font"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/margin10" />
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/cardview_dark_background"
+                    android:layout_margin="@dimen/margin10"
+                    android:hint="Enter New Password"
+                    android:background="@drawable/field_shape"
+                    android:fontFamily="@font/title_font"
+                    android:inputType="textPassword"
+                    android:textSize="20sp"
+                    android:padding="@dimen/margin10" />
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etRetypePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/cardview_dark_background"
+                    android:layout_margin="@dimen/margin10"
+                    android:hint="Re-Type New Password"
+                    android:background="@drawable/field_shape"
+                    android:fontFamily="@font/title_font"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/margin10" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin10"
+                    android:background="@drawable/bottom_pannel"
+                    android:elevation="5dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/title_font"
+                    android:padding="@dimen/margin10"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/fieldColor" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="margin40">250dp</dimen>
+    <dimen name="margin100">100dp</dimen>
+    <dimen name="margin30">30dp</dimen>
+</resources>

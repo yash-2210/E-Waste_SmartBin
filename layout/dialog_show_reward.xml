@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin10"
+        app:cardElevation="@dimen/margin10"
+        app:cardPreventCornerOverlap="true"
+        android:layout_centerInParent="true"
+        android:outlineAmbientShadowColor="@color/assColor"
+        android:outlineSpotShadowColor="@color/assColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/TrophyImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:textAlignment="center"
+            android:src="@drawable/trophy"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="@dimen/margin30"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/margin10"
+            app:contentPadding="@dimen/margin10"
+            app:cardBackgroundColor="@color/lightBlue">
+        <TextView
+            android:id="@+id/totalRewards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/rewads"
+            android:fontFamily="@font/robot"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/blueFont" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/OkBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Okay"
+                android:textSize="22dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/fieldColor"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

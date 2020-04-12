@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">SmartBin</string>
+    <string name="e_waste">E-WASTE</string>
+    <string name="SignIn">Login</string>
+    <string name="SignUp">SIGN UP</string>
+    <string name="Dashboard">DASHBOARD</string>
+    <string name="usernameHint">Username or Mobile No</string>
+    <string name="forgotPwd">Forgot Password?</string>
+    <string name="signUplink"><u>Not Registered?</u></string>
+    <string name="already_registered"><u>Already Registered ?</u></string>
+    <string name="title_activity_maps">Map</string>
+    <string name="profileTitle">PROFILE</string>
+
+    <string name="notification_title">New message</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="notification_text">Hello</string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+    <string name="strEmail">ewsb_help@ewsb.in</string>
+    <string name="strContact">+91-9510668006</string>
+    <string name="strDescription">An app use for locate the near Smart dustbins</string>
+    <string name="strRateApp">Rate App</string>
+    <string name="strRateMessage">Share Your Experience</string>
+
+    <string name="rationale_location">This app needs access to your location to know where.</string>
+    <string name="rationale_camera">This app needs access to your camera so you can take pictures.</string>
+    <string name="rationale_storage">This app needs access to your storage so you can pick pictures.</string>
+
+    <string name="app_provider">com.example.smartbin.android.fileprovider</string>
+    <string name="thankyou">Thank You :)</string>
+    <string name="string_msg">You Earned Scratch Card</string>
+    <string name="e_waste_smartbin">E-Waste SmartBin</string>
+    <string name="rewads">20 Points you earned</string>
+    <string name="Step2Msg">Select Near-by Smart Bin</string>
+    <string name="Step3Msg">Scan QR code of SmartBin and Get your Rewards</string>
+    <string name="default_notification_channel_id">0</string>
+
+
+</resources>

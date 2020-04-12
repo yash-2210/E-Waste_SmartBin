@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/signInTitle"
+            android:layout_height="140dp"
+            android:background="@drawable/bottom_curve_shape"
+            android:fontFamily="@font/title_font"
+            android:text="@string/SignUp"
+            android:textAlignment="center"
+            android:textColor="@color/fontColor"
+            android:textSize="40sp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/signUpCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            app:contentPaddingTop="@dimen/margin30"
+            app:contentPaddingBottom="@dimen/margin30"
+            android:elevation="40dp"
+            app:cardBackgroundColor="@color/assColor"
+            app:cardCornerRadius="@dimen/margin30"
+            app:cardElevation="@dimen/margin10"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/margin30"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="@dimen/margin30"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUpUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/field_shape"
+                    android:drawableEnd="@drawable/ic_boss"
+                    android:fontFamily="@font/title_font"
+                    android:hint="User Name"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/userEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/field_shape"
+                    android:drawableEnd="@drawable/ic_email"
+                    android:fontFamily="@font/title_font"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/userMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/field_shape"
+                    android:drawableEnd="@drawable/ic_smartphone"
+                    android:fontFamily="@font/title_font"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/signUpPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/field_shape"
+                    android:drawableEnd="@drawable/ic_password_one"
+                    android:fontFamily="@font/title_font"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/field_shape"
+                    android:drawableEnd="@drawable/ic_shield"
+                    android:fontFamily="@font/title_font"
+                    android:hint="Re-Type Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="50dp">
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/signin_img" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signUpLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/robot"
+                android:linksClickable="true"
+                android:text="@string/already_registered"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/fieldColor"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>
